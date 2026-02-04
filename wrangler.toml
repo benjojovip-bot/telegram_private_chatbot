@@ -1,21 +1,20 @@
-name = "my-tg-bot" # 确保与 Worker 名称一致
-main = "index.js" # 你的入口文件路径
+name = "my-tg-bot"
+# 如果你的 index.js 在根目录下，请保持这一行
+# 如果报错仍然提示找不到文件，请确认文件名是否真的是 index.js
+main = "index.js" 
 compatibility_date = "2024-11-30"
 
-# 1. 必须配置：KV 命名空间绑定
-# 只有在这里写了，代码里的 env.TOPIC_MAP 才能生效
 [[kv_namespaces]]
-binding = "TOPIC_MAP" 
-id = "ce49ac174c594e4a940dfc6714b6bde8" # 请在 KV 页面找到那串长 ID 填入
+binding = "TOPIC_MAP"
+id = "ce49ac174c594e4a940dfc6714b6bde8"
 
-# 2. 环境变量配置
 [vars]
-SUPERGROUP_ID = "-1003809033535" # 填入你的超级群组 ID
+SUPERGROUP_ID = "-1003809033535" # 请填入你截图中的那个 ID
 
-# 3. 观测性配置
 [observability.logs]
 enabled = true
 invocation_logs = true
 
 [observability]
 enabled = false
+head_sampling_rate = 1
