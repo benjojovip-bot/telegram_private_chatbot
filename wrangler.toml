@@ -1,7 +1,7 @@
 name = "my-tg-bot"
 # 如果你的 index.js 在根目录下，请保持这一行
 # 如果报错仍然提示找不到文件，请确认文件名是否真的是 index.js
-main = "index.js" 
+main = "worker.js" 
 compatibility_date = "2024-11-30"
 
 [[kv_namespaces]]
