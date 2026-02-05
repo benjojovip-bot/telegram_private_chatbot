@@ -7,6 +7,7 @@ binding = "TOPIC_MAP"
 id = "ce49ac174c594e4a940dfc6714b6bde8"
 
 [vars]
+SUPERGROUP_ID = "-1003809033535"
 
 [observability.logs]
 enabled = true
